@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/headername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi siva"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/header"
+        android:src="@drawable/ic_foody_logo1" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/welcome_to_foody_box"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

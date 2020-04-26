@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/greyBackgroud">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/messageSwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/foodyboxImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:contentDescription="@string/ordernowbutton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/image5"
+                    android:layout_below="@+id/recyclerView">
+                </ImageView>
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id = "@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    app:fillColor = "@color/greyBackgroud"
+                    app:pageColor =  "@color/greyBackgroud"
+                    app:radius = "6dp"
+                    android:layout_below="@+id/foodyboxImage"
+                    app:slideInterval = "3000" />
+                <ImageView
+                    android:id="@+id/foodyboxRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="@string/registerbutton"
+                    android:src="@drawable/registermin"
+                    android:layout_below="@+id/carouselView">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/whatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="@string/registerbutton"
+                    android:src="@drawable/bannerad"
+                    android:layout_below="@+id/foodyboxRegister">
+                </ImageView>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ProgressBar
+        android:id="@+id/progressbarhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+
+
+
+</RelativeLayout>

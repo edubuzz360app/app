@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_splash"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    tools:context=".AuthenticationActivity">
+
+    <ImageView
+        android:id="@+id/shoptitle"
+        android:layout_width="200dp"
+        android:contentDescription="@string/splashscreenpagelogo"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1.2"
+        android:src="@drawable/ic_foodybox_app" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/shoptitle"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        android:ems="20"
+        android:hint="@string/login_name"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@android:color/white"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+    <Spinner
+        android:id="@+id/spinnerCountries"
+        android:layout_width="96dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/username"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="40dp"
+        style="@style/mySpinnerItemStyle"
+        android:popupBackground="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        />
+
+    <EditText
+        android:id="@+id/mobilenumber"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:ems="20"
+        android:hint="@string/login_mobilenumber"
+        android:layout_toEndOf="@+id/spinnerCountries"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@android:color/white"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+
+
+    <EditText
+        android:id="@+id/verification"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sendsmsbutton"
+        android:layout_marginTop="24dp"
+        android:ems="20"
+        android:gravity="center"
+        android:hint="@string/login_verification"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@android:color/white"
+        android:inputType="phone"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/sendsmsbutton"
+        android:text="@string/otp_send"
+        android:textColor="#BA1B1D"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/mobilenumber"
+        android:background="@layout/buttonshape"
+        />
+
+
+    <Button
+        android:id="@+id/verify0"
+        android:text="@string/login_button"
+        android:textColor="#BA1B1D"
+        android:textSize="17sp"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_below="@+id/verification"
+        android:background="@layout/buttonshape"
+        />
+    <ProgressBar
+        android:id="@+id/progressbarauthentication"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>

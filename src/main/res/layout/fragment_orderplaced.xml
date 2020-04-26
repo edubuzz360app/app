@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/viewOrderConfirmed"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/shape_status_completed"
+        app:layout_constraintTop_toTopOf="@+id/imageOrderconfirmed"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOrderconfirmed"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageOrderconfirmed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/myorders"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/viewOrderConfirmed"
+        app:layout_constraintTop_toBottomOf="@+id/imageOrderplaced"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+    <View
+        android:id="@+id/viewConfirmedsupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageOrderconfirmed"
+        app:layout_constraintEnd_toEndOf="@+id/imageOrderconfirmed"
+        app:layout_constraintTop_toTopOf="@+id/imageOrderconfirmed"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOrderconfirmed" />
+
+    <TextView
+        android:id="@+id/textOrderConfirmed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toEndOf="@+id/imageOrderconfirmed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewConfirmedsupporter"
+        android:text="Food Ready for Delivery"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your Food is Ready"
+        android:id="@+id/textbelowconfirmed"
+        android:fontFamily="serif"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/textOrderConfirmed"
+        app:layout_constraintEnd_toEndOf="@+id/textOrderConfirmed"
+        app:layout_constraintTop_toBottomOf="@+id/viewConfirmedsupporter"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

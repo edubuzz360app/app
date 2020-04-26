@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Foody Box</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="healthimportant">Your Health is important to us !</string>
+    <string name="title">FoodyBox</string>
+    <string name="Description">FoodyBoxDescription</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_closed">close</string>
+    <string name="newyearwish">A Very Healthy New Year from FoodyBox</string>
+    <string name="splashscreen">Made in India… #HealthyIndia</string>
+    <string name="splashscreenpagelogo">splashscreenpagelogo</string>
+    <string name="loginpage">loginpage</string>
+    <string name="registrationscreenlogo">registrationscreenlogo</string>
+    <string name="imagebutton">imagebutton</string>
+    <string name="ordernowbutton">ordernowbutton</string>
+    <string name="registerbutton">registerbutton</string>
+    <string name="notinternet">notinternet</string>
+    <string name="header">header</string>
+    <string name="login_name">Enter Your Name</string>
+    <string name="login_mobilenumber">Mobile Number</string>
+    <string name="login_verification">Verification code</string>
+    <string name="otp_send">Send OTP</string>
+    <string name="login_button">Login</string>
+    <string name="help_bottom_nav">help</string>
+    <string name="coupon_bottom_nav_menu">coupon</string>
+    <string name="try_agai">Try Again</string>
+    <string name="welcome_to_foody_box">Welcome to Foody Box !</string>
+    <string name="home">Home</string>
+    <string name="my_orders">My Orders</string>
+    <string name="set_delivery_point">Set Delivery Point</string>
+    <string name="cart">Cart</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="my_account">My Account</string>
+    <string name="coupons">Coupons</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="help">Help</string>
+    <string name="share">Share</string>
+    <string name="share_toolbar">Share</string>
+    <string name="cart_toolbar">cart</string>
+    <string name="refer_friends">Refer Friends</string>
+    <string name="profile">Profile</string>
+    <string name="delivery_status">Track</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="orderstatus">Track your order</string>
+    <string name="foodready">Food Ready</string>
+
+    <string name="spinner_header">Select Vendors</string>
+</resources>

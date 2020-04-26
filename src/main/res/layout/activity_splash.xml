@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".splash"
+    android:background="@color/colorWhite">
+
+    <pl.droidsonroids.gif.GifImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/gif"
+        android:src="@drawable/foody"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gif"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/healthyIndia"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progress"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:text="@string/splashscreen"
+        android:textSize="20sp" />
+
+</RelativeLayout>

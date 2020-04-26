@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/homepage"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/myorders"
+            android:title="@string/my_orders" />
+        <item
+            android:id="@+id/deliver_address"
+            android:icon="@drawable/deliverypoint"
+            android:title="@string/set_delivery_point" />
+        <item
+            android:id="@+id/cart_side"
+            android:icon="@drawable/mycart"
+            android:title="@string/cart" />
+        <item
+            android:id="@+id/location_Status"
+            android:icon="@drawable/deliverypoint"
+            android:title="@string/orderstatus" />
+        <item
+            android:id="@+id/sign_up"
+            android:icon="@drawable/signup"
+            android:title="@string/sign_up" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/myaccount"
+            android:title="@string/my_account" />
+
+        <item
+            android:id="@+id/coupons_side"
+            android:icon="@drawable/couponsidebar"
+            android:title="@string/coupons" />
+        <item
+            android:id="@+id/privacy_side"
+            android:icon="@drawable/privacypolicy"
+            android:title="@string/privacy_policy" />
+        <item
+            android:id="@+id/help_side"
+            android:icon="@drawable/support_icon_navibar"
+            android:title="@string/help" />
+
+    </group>
+    <item android:title="@string/refer_friends">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/appversion"
+                android:title="App Version 2.2"
+                />
+
+        </menu>
+    </item>
+</menu>
+

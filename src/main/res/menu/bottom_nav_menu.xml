@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/myaccount"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom"
+        app:itemIconTint="@color/colorPrimary" />
+
+    <item
+        android:id="@+id/trackorder"
+        android:title="@string/delivery_status"
+        android:icon="@drawable/deliverypoint"
+        app:itemIconTint="@color/colorPrimary"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_left"
+        android:icon="@drawable/support_icon_navibar"
+        app:itemIconTint="@color/colorPrimary"
+        android:title="@string/help_bottom_nav"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_right"
+        app:showAsAction="ifRoom"
+        app:itemIconTint="@color/colorPrimary"
+        android:title="@string/coupon_bottom_nav_menu"
+        android:icon="@drawable/coupon_icon_navibar" />
+
+
+</menu>
